@@ -1,0 +1,24 @@
+Q1
+a. correct, defaulted type為Int
+b. incorrect, 5.6不符合Int type
+c. correct, defaulted type為String
+d. incorrect, 要宣告nullable string應更改為 "String?"
+e. correct, 556.6符合Double? type
+f. incorrect, 應改為List<String?>?
+g. correct, list內容符合List<String?>?規定
+h. incorrect, list為nullale,應更改為"list?.size"
+i. correct, 原因同上
+
+
+Q2
+c, 因為message.length = 39
+
+ 
+Q3
+d,
+a. kotlin應該沒有new的用法!?
+b. value皆為100
+c. value為1000^10
+
+
+

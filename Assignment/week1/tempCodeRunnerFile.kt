@@ -1,0 +1,2 @@
+()
+    // human2.attack()
