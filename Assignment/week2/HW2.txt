@@ -1,0 +1,40 @@
+Q1
+繼承(inheritance)為類別與類別之間的一種關係，若A繼承自B，則稱A為B的子類，B為A的父類(超類)。
+繼承可以發展出類別之間的階層關係，因子類擁有父類的所有屬性和方法，因此可以簡化程式碼，並且透過覆寫使其有更改的彈性。
+另外子類也可以增加自己的屬性和方法，使其做出和父類的差異。
+
+Q2
+split通常都會指定特定字元做切割點，將一字串切割成多個字串，在kotlin中可以用split()此內建函式。
+
+fun main(){
+    val string = "This is a string"
+    val splitedString = string.split(' ') //用空格做split
+    println(splitedString) //[This, is, a, string]
+}
+
+Q3
+Map。
+
+fun main(){
+    val map = mapOf<String, Int>("ten" to 10, "twenty" to 20, "thirty" to 30)
+    for((k, v) in map){
+        println("$k is $v")
+    }
+}
+
+Q4
+ArrayList採用的資料結構是Array，LinkedList採用的資料結構是LinkedList。
+存取:ArrayList支持隨機存取(random access)，在存取上會比LinkedList的依序存取(sequential access)效率來得好。
+記憶體空間:因為LinkedList需要記住前後節點位置，因此需要較多記憶體空間。
+新增/刪除值:LinkedList只需更改鍵結的指向位置，然而ArrayList需搬移大量資料，以維持資料連續性
+
+Q5
+Numbers:Byte, Short, Int, Long, UByte, UShort, UInt, ULong, Float, Double
+Array:ByteArray, ShortArray, IntArray, LongArray, UByteArray, UShortArray, UIntArray, ULongArray, FloatArray, DoubleArray
+Boolean
+Char
+String
+
+Q6
+2,147,483,647 (2^31 - 1)。
+若想儲存更大的整數，可以用Long此種variable type，其最大可以儲存到9,223,372,036,854,775,807 (2^63 - 1)。
